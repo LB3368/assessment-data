@@ -20,14 +20,14 @@ module.exports = {
 
             create table countries (
                 country_id serial primary key, 
-                name varchar
+                name varchar(65)
             );
 
             CREATE TABLE cities (
                 city_id SERIAL PRIMARY KEY,
                 name VARCHAR(25),
                 rating INTEGER,
-                country_id INTEGER REFERENCES countries(country_id),
+                country_id INTEGER REFERENCES countries(country_id)
             );
 
             insert into countries (name)
@@ -226,6 +226,10 @@ module.exports = {
             ('Yemen'),
             ('Zambia'),
             ('Zimbabwe');
+
+        INSERT INTO cities (name, rating, country_id)
+        VALUES ('Kabul', 4, 2), ('Tirana', 3, 2), ('Algiers', 5, 3), ('Atlanta', 3, 187)
+
         `).then(() => {
             console.log('DB seeded!')
             res.sendStatus(200)

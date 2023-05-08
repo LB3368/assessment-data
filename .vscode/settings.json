@@ -1,0 +1,16 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": true
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "name": "assessment-data",
+            "database": "postgresql://LB3368:v2_43ynR_FQriqpypqtBHhvHEJ3Kuk87@db.bit.io:5432/LB3368/assessment-data",
+            "username": "db.bit.io",
+            "connectString": "postgresql://LB3368:v2_43ynR_FQriqpypqtBHhvHEJ3Kuk87@db.bit.io:5432/LB3368/assessment-data"
+        }
+    ]
+}
